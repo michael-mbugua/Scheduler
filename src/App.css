@@ -41,14 +41,21 @@
     margin-bottom: 32px;
   }
   
+@keyframes shake {
+  0%,100% { translate: 0;}
+  25% { translate: 8px 0;}
+  75% { translate: -8px  0;}
+}
+
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 2px solid  green;
     outline: none;
     width: 320px;
     background: transparent;
     color: #fff;
+    animation: shake 0.14s 3;
   }
   
   .todo-input::placeholder {
